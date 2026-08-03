@@ -4,62 +4,192 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#111111" />
+
   <title>DREdiohead — Private Listening</title>
+
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-2MXT3X7GVK">
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "G-2MXT3X7GVK");
+  </script>
 </head>
+
 <body>
   <main class="shell">
+
     <header class="hero">
+
       <div class="cover-wrap">
-        <img id="cover" class="cover" src="images/cover.jpg" alt="Album cover" />
+        <img
+          id="cover"
+          class="cover"
+          src="images/cover.jpg"
+          alt="DREdiohead OK Chronic album cover"
+        />
       </div>
+
       <div class="hero-copy">
-        <p class="eyebrow">PRIVATE LISTENING LINK</p>
+
+        <p class="eyebrow">
+          PRIVATE LISTENING LINK
+        </p>
+
         <h1>DREdiohead</h1>
-        <p class="subtitle">A private collection of works in progress. This player was created specifically for Ed O'Brien. <br><br>Ed - I hope you get here and can give this a listen someday. After hearing your recent interview on The Broken Record podcast talking about how much you were into Dr. Dre during the Kid A Recording, I couldn't believe what I was hearing as this project began a few weeks prior to the release of that interview. Was really just something fun to do for myself, but after hearing that, I really wanted you to hear this stuff. All of it was recorded live with a DDJ-FLX4 and stems of Radiohead and Dr. Dre produced songs...and typically the first attempt at mixing the 2 songs together is what is heard here. I have over 50 tracks, these are just the ones that "worked" out..mostly. Hit me up if you ever get to hear this and let me know what you think! <br><br>Cheers,<br>Don Jovi<br>1.716.418.4700<br><a href="mailto:donjovi@gmail.com">donjovi@gmail.com</a>
-donjovi@gmail.com</a></p>
+
+        <p class="subtitle">
+          A private collection of works in progress. This player was created
+          specifically for Ed O'Brien.
+        </p>
+
+        <div class="personal-note">
+
+          <p>
+            Ed — I hope you get here and can give this a listen someday.
+            After hearing your recent interview on the
+            <em>Broken Record</em> podcast talking about how much you were
+            into Dr. Dre during the <em>Kid A</em> recording sessions, I
+            couldn't believe what I was hearing, as this project had begun
+            just a few weeks before that interview was released.
+          </p>
+
+          <p>
+            It was really just something fun to do for myself, but after
+            hearing that, I really wanted you to hear this stuff. All of it
+            was recorded live using a DDJ-FLX4 and stems from Radiohead songs
+            and songs produced by Dr. Dre.
+          </p>
+
+          <p>
+            Typically, what you hear here is the first attempt at mixing the
+            two songs together. I have more than 50 tracks; these are just the
+            ones that “worked” out—mostly.
+          </p>
+
+          <p>
+            Hit me up if you ever get to hear this and let me know what you
+            think.
+          </p>
+
+          <p class="signature">
+            Cheers,<br />
+            Don Jovi<br />
+            1.716.418.4700<br />
+            <a href="mailto:donjovi@gmail.com">
+              donjovi@gmail.com
+            </a>
+          </p>
+
+        </div>
+
       </div>
+
     </header>
 
     <section class="player" aria-label="Audio player">
+
       <div class="now-playing">
+
         <div>
           <p class="label">NOW PLAYING</p>
           <h2 id="trackTitle">Select a track</h2>
           <p id="trackArtist">DREdiohead</p>
         </div>
-        <button id="playButton" class="play-button" aria-label="Play">▶</button>
+
+        <button
+          id="playButton"
+          class="play-button"
+          type="button"
+          aria-label="Play">
+          ▶
+        </button>
+
       </div>
 
       <div class="progress-row">
+
         <span id="currentTime">0:00</span>
-        <input id="seekBar" type="range" min="0" max="100" value="0" aria-label="Seek" />
+
+        <input
+          id="seekBar"
+          type="range"
+          min="0"
+          max="100"
+          value="0"
+          aria-label="Seek"
+        />
+
         <span id="duration">0:00</span>
+
       </div>
 
       <div class="controls">
-        <button id="prevButton" class="control-button" aria-label="Previous track">⏮</button>
-        <button id="nextButton" class="control-button" aria-label="Next track">⏭</button>
+
+        <button
+          id="prevButton"
+          class="control-button"
+          type="button"
+          aria-label="Previous track">
+          ⏮
+        </button>
+
+        <button
+          id="nextButton"
+          class="control-button"
+          type="button"
+          aria-label="Next track">
+          ⏭
+        </button>
+
         <label class="volume-control">
+
           <span>Volume</span>
-          <input id="volumeBar" type="range" min="0" max="1" value="0.85" step="0.01" />
+
+          <input
+            id="volumeBar"
+            type="range"
+            min="0"
+            max="1"
+            value="0.85"
+            step="0.01"
+            aria-label="Volume"
+          />
+
         </label>
+
       </div>
 
       <audio id="audio" preload="metadata"></audio>
+
     </section>
 
-    <section class="track-section">
+    <section class="track-section" aria-labelledby="tracksHeading">
+
       <div class="section-heading">
-        <h2>Tracks</h2>
+        <h2 id="tracksHeading">Tracks</h2>
         <span id="trackCount"></span>
       </div>
+
       <ol id="trackList" class="track-list"></ol>
+
     </section>
 
     <footer>
       Shared privately. Please do not repost or redistribute.
     </footer>
+
   </main>
 
   <script src="tracks.js"></script>
