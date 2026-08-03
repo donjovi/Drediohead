@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111111" />
+  <title>DREdiohead — Private Listening</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div class="cover-wrap">
+        <img id="cover" class="cover" src="images/cover.jpg" alt="Album cover" />
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">PRIVATE LISTENING LINK</p>
+        <h1>DREdiohead</h1>
+        <p class="subtitle">A private collection of works in progress.</p>
+      </div>
+    </header>
+
+    <section class="player" aria-label="Audio player">
+      <div class="now-playing">
+        <div>
+          <p class="label">NOW PLAYING</p>
+          <h2 id="trackTitle">Select a track</h2>
+          <p id="trackArtist">DREdiohead</p>
+        </div>
+        <button id="playButton" class="play-button" aria-label="Play">▶</button>
+      </div>
+
+      <div class="progress-row">
+        <span id="currentTime">0:00</span>
+        <input id="seekBar" type="range" min="0" max="100" value="0" aria-label="Seek" />
+        <span id="duration">0:00</span>
+      </div>
+
+      <div class="controls">
+        <button id="prevButton" class="control-button" aria-label="Previous track">⏮</button>
+        <button id="nextButton" class="control-button" aria-label="Next track">⏭</button>
+        <label class="volume-control">
+          <span>Volume</span>
+          <input id="volumeBar" type="range" min="0" max="1" value="0.85" step="0.01" />
+        </label>
+      </div>
+
+      <audio id="audio" preload="metadata"></audio>
+    </section>
+
+    <section class="track-section">
+      <div class="section-heading">
+        <h2>Tracks</h2>
+        <span id="trackCount"></span>
+      </div>
+      <ol id="trackList" class="track-list"></ol>
+    </section>
+
+    <footer>
+      Shared privately. Please do not repost or redistribute.
+    </footer>
+  </main>
+
+  <script src="tracks.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
