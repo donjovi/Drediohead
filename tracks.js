@@ -15,9 +15,9 @@ const tracks = [
     file: "audio/03 Bulletproof Gangbang.mp3"
   },
   {
-    title: "Deep Motion Picture",
+    title: "Ho's A Faust Arp",
     artist: "DREdiohead",
-    file: "audio/04 Deep Motion Picture.mp3"
+    file: "audio/04 Ho's A Faust Arp.mp3"
   },
   {
     title: "Thinkin About Compton",
@@ -65,9 +65,9 @@ const tracks = [
     file: "audio/13 xxplosive Dogsnatchers.mp3"
   },
   {
-    title: "Talk To My Jigsaw Diary",
+    title: "AIRAT-TAT-TAT-TAT",
     artist: "DREdiohead",
-    file: "audio/14 Talk To My Jigsaw Diary.mp3"
+    file: "audio/14 AIRAT-TAT-TAT-TAT.mp3"
   },
   {
     title: "Nothin But Everything",
