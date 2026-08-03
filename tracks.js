@@ -60,9 +60,9 @@ const tracks = [
     file: "audio/12 Doctor Fogs Office.mp3"
   },
   {
-    title: "xxplosive Bodysnatchers",
+    title: "xxxplosive Bodysnatchers",
     artist: "DREdiohead",
-    file: "audio/13 xxplosive Bodysnatchers.mp3"
+    file: "audio/13 xxxplosive Bodysnatchers.mp3"
   },
   {
     title: "AIRAT-TAT-TAT-TAT",
@@ -73,15 +73,5 @@ const tracks = [
     title: "Nothin But Everything",
     artist: "DREdiohead",
     file: "audio/15 Nothin But Everything.mp3"
-  },
-  {
-    title: "All in a Day's Lift",
-    artist: "DREdiohead",
-    file: "audio/16 All in a Day's Lift.mp3"
-  },
-  {
-    title: "California Anthem",
-    artist: "DREdiohead",
-    file: "audio/17 California Anthem.mp3"
-  }
+   }
 ];
