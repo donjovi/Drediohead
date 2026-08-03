@@ -1,1 +1,0 @@
-Place your MP3 files in this folder, then update tracks.js.
