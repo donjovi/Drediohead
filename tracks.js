@@ -45,9 +45,9 @@ const tracks = [
     file: "audio/09 A Reminder of How You Want It.mp3"
   },
   {
-    title: "I Need A Gun",
+    title: "In Limbo Witta Gun",
     artist: "DREdiohead",
-    file: "audio/10 I Need A Gun.mp3"
+    file: "audio/10 In Limbo Witta Gun.mp3"
   },
   {
     title: "Meeting in the Deep",
